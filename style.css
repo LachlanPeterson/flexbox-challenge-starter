@@ -42,4 +42,42 @@ nav a {
     color: #888;
 }
 
+/* Hero Component */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8980c2 url(images/zebra-hero.jpg) center no-repeat;
+    /* Not ideal because images will be displayed in top left corner with original dimensions, and then tile if it doesnt fit */
+    /* background-size: contain; */
+    /* contain scaled image down until largest axis fits contain, then tiles on other axis */
+    background-size: cover;
+    /* We use cover because it uses smaller axis and crops the rest, but background is still in top left. When scaled for cover it crops off right side so we can set position of background above with center (50%)*/
+    /* We also put a colour background like alt text incase the image cant load */
+    padding: 2rem 0;
+}
 
+#hero h1, #hero a {
+    color: white;
+}
+
+#hero h1 {
+    font-family: 'Bree Serif', 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+#hero a {
+    
+    font-family: Lato, Arial, Helvetica, sans-serif; 
+    font-size: 1.25rem;
+    border: 1px solid white;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+}
+
+#hero img {
+    width: 66%;
+    border-radius: 50%;
+}
