@@ -11,3 +11,35 @@ body {
     flex-direction: column;
 }
 
+/* Header Component */
+header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1rem 0 1.5rem;
+    /* justify-content: center; */
+    /* doesnt work as we have made the flex direction column. justify content works with different flex direction row */
+}
+
+#brand {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* This helps with responsiveness, spreads out when we go wider, contracts when smaller. */
+}
+
+nav a {
+    font-family: Lato, Arial, Helvetica, sans-serif;  
+    /* Main is Lato, backup is arial etc */
+    text-decoration: none;
+    /* removing underline */
+    font-size: 1.25rem;
+    color: #888;
+}
+
+
